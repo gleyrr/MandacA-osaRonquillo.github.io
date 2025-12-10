@@ -1,0 +1,518 @@
+:root {
+  --bg: #380505;
+  --card: #141b2b;
+  --text: #f8eed3;
+  --muted: #f7e9d5;
+  --accent: #b21414;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.77);
+}
+/* Navbar */
+.navbar {
+  background: #5c0808;
+  color: #8a4f4f;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.356);
+}
+
+.nav-container {
+  width: min(15000px, 92%);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f4b183;
+  text-decoration: underline;
+
+}
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;background:#e9e9e900;
+  text-align:center;
+  
+  
+}
+header h1 {
+  margin: 0;
+  font-size: 5rem;
+  
+}
+header p {
+  margin-top: 9px;
+  font-size: 1.4rem;
+  color: var(--muted);
+}
+
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+.grid {
+  margin-top: 2px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding-bottom: 40px;
+}
+
+/* Card */
+.card {
+  height: 330px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .7s ease;
+  border-radius: 18px;
+}
+.card:hover,
+.card:focus-within,
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  border-radius: inherit;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+.face1,
+.face2 {
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.face1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0,0,0,0.18));
+  z-index: 1;
+}
+
+.face2 {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+.face2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(43, 40, 40, 0.726);
+  z-index: 1;
+}
+
+.face .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.face2 .content h3 {
+  color: #ffffff;         /* pure white */
+  font-size: 1.4rem;
+  font-weight: 700;       /* bold thicker */
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
+  position: relative; /* makes text readable above images */
+}
+.face2 .content h3::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #c70000;  /* your accent red */
+  margin: 6px auto 0;
+  border-radius: 3px;
+
+}
+.face2 .content a {
+  color: #ffffff;          /* text color for the link */
+  text-decoration: none;   /* remove underline */
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #c70000; /* bright red underline */
+  text-underline-offset: 4px;  
+}
+
+.face2 .content a:visited {
+  color: #ffffff;  /* stops browser from turning it purple */
+}
+
+.face2 .content a:hover {
+  color: #ffcccc;  /* optional: lighter hover */
+}
+
+.face2 .content p {
+  color: #ffffff;         /* also white */
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;       /* cleaner spacing */
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+.face .content a {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #c70000;
+  text-underline-offset: 4px;
+}
+
+.face .content a:visited {
+  color: #ffffff !important;
+}
+
+.face .content a:hover {
+  color: #f9ebeb;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  padding: 10px 18px;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(134, 47, 47, 0.4);
+  transition: background .2s ease;
+}
+.cta:hover {
+  background: #7f1212;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0 30px;
+  color: var(--muted);
+}
+
+/* Moving background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("ness.jpg");
+  background-size: 150%;
+  background-repeat: repeat-x;
+  opacity: 0.15;                 /* adjust transparency */
+  z-index: -1;                   /* keeps it behind everything */
+  animation: pan 35s linear infinite;
+}
+
+/* Animation (left → right → repeat) */
+@keyframes pan {
+  1% { background-position: 60 90; }
+  20% { background-position: 100% 0; }
+}
+/* Make the whole card clickable without breaking layout */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Smooth scroll when clicking */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header for About section */
+.about-header {
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+/* Hide all song info at first */
+.song-info {
+  display: none;
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(20, 20, 20, 0.45);
+  border-radius: 12px;
+  width: min(900px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Show only the clicked one */
+.song-info:target {
+  display: block;
+}/* Description Page Styling */
+.song-info {
+  display: none;
+  margin-top: 50px;
+  padding: 35px;
+  background: rgba(15, 15, 15, 0.45);
+  border-radius: 24px;
+  width: min(900px, 92%);
+  margin-inline: auto;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow);
+}
+
+/* When opened with :target */
+.song-info:target {
+  display: block;
+  animation: fadeSlide .8s ease;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Box inside for neat spacing */
+.info-box h3 {
+  margin-top: 22px;
+  font-size: 1.3rem;
+  color: var(--muted);
+}
+
+/* Lyrics short lines look */
+.lyrics {
+  line-height: 2.2;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Back to top button */
+.back-btn {
+  margin-top: 40px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+.back-btn:hover {
+  opacity: .85;
+}
+/* Smooth slide-down reveal after flip */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✨ Description Page Title */
+.desc-title {
+  display: none;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: var(--text);
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+.song-info:target ~ .desc-title {
+  display: block;
+}
+
+/* Bigger cleaner text layout */
+.song-info {
+  line-height: 1.7;
+  font-size: 1.12rem;
+  letter-spacing: .4px;
+  padding: 45px;
+}
+
+/* Section headings inside */
+.song-info h2 {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.song-info h3 {
+  margin-top: 32px;
+  font-size: 1.4rem;
+  color: #fff0ee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 📝 Lyrics style */
+.lyrics {
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 1.15rem;
+  color: var(--text);
+}
+.backTM-btn {
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: rgb(255, 255, 255);
+  border-radius: 90px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  
+}
+.container { position: relative; }
+.backTM-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/* Stylish dividers between sections */
+.info-box h3::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: #d30000;
+  border-radius: 10px;
+}
+
+/* Back button upgraded */
+.back-btn {
+  margin-top: 45px;
+  background: #b00000;
+  border: 2px solid #ffffffcc;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.back-btn:hover {
+  background: #e00000;
+  transform: translateY(-2px);
+}
+
+/* Link style inside info */
+.song-info a {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline solid #e00000 3px;
+}
+.song-info a:hover {
+  opacity: 0.9;
+}
+
+/*  Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* Keep card flipped if its description is active */
+.card.active {
+  transform: rotateY(180deg);
+}
+
+.desc-title {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 25px auto; /* centers horizontally */
+  padding: 10px 25px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--accent);
+  color: #fff;
+  border: 2px solid #ffffff;
+  box-shadow: var(--shadow);
+  transition: 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+  background: #9c0000;
+  transform: scale(1.05);
+}
+
+
+.back-btn:hover {
+    opacity: 0.7;
+}
+.info-box h3::after {
+  content: none !important;
+}
+.song-info h2::after {
+  content: none !important;
+}
+
+/* FORCE-REMOVE any red divider pseudo-elements that might be coming from multiple selectors */
+.info-box h3::after,
+.song-info h2::after,
+.description-box h2::after,
+.face2 .content h3::after,
+.face .content h3::after {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}

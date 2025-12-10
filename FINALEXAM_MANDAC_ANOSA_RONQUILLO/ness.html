@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ness — Top Songs</title>
+ 
+  <link rel="stylesheet" href="ness.css" />
+</head>
+<body>
+<!-- Navbar -->
+ <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+  <li><a href="intropage.html" class="active">Home</a></li>
+  <li><a href="thegirls.html">Tres Marias</a></li>
+  <li><a href="ness.html" style="color: #e25050;">About-Ness</a></li>
+  <li><a href="glaire.html">About-Glaire</a></li>
+  <li><a href="ianna.html">About-Ianna</a></li>
+</ul>
+
+    </div>
+  </nav>
+
+  <header class="title-block">
+    <h1>This is Ness</h1>
+    <p>My Spotify Top 3.</p>
+  </header>
+
+  
+  <a id="top"></a>
+
+  <main class="container">
+   
+    <section class="grid" aria-label="Top songs">
+
+      <!-- First song card. Clicking this jumps to the song1 section -->
+      <a href="#song1" class="card" data-song="1" aria-label="Top Song 1">
+        
+        <!-- Front side of the card with vinyl image -->
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+
+        
+        <div class="face face2" style="background-image: url('deftones.jpg');">
+          
+          <audio class="song" src="Deftones - Be Quiet And Drive (Far Away) (Official Video) [HD Remaster] 4.mp3" preload="auto"></audio>
+        
+         
+          <div class="content">
+            <h3>Deftones</h3>
+            <p>"Be Quiet And Drive (Far Away)"</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Second song card -->
+      <a href="#song2" class="card" data-song="2" aria-label="Top Song 2">
+        
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+
+        <div class="face face2" style="background-image: url('am.jpg');">
+          <audio class="song" src="Arctic Monkeys - Crying Lightning (Official Video) 4.mp3" preload="auto"></audio>
+          
+          <div class="content">
+            <h3>Arctic Monkeys</h3>
+            <p>"Crying Lighting"</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Third song card -->
+      <a href="#song3" class="card" data-song="3" aria-label="Top Song 3">
+        
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+
+        <div class="face face2" style="background-image: url('lana.jpg');">
+          <audio class="song" src="PLK.mp3" preload="auto"></audio>
+
+          <div class="content">
+            <h3>Lana Del Rey</h3>
+            <p>"Cinnamon Girl"</p>
+          </div>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <!-- Song descriptions below.
+       These sections are hidden until a card link is clicked. -->
+  <section id="song1" class="song-info">
+    <h2>Be Quiet And Drive (Far Away)  – Deftones </h2>
+
+   
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>TIt represents growing up in a small town in the 90's, desperate to leave, but knowing that i'll always be guilted into coming back.</p>
+
+      <h3>About the Artist</h3>
+      <p>Deftones is an American alternative metal band formed in Sacramento, California, in 1988</p>
+
+      <h3>Why I Like It</h3>
+      
+      <ul>
+        <li>I Love nu-metal</li>
+        <li>Relatable lyrics</li>
+        <li>I love learning their guitar riffs</li>
+      </ul>
+
+      <h3> My Favorite Lines</h3>
+      <p class="lyrics">“<br>It feels good to know you're all mine<br> Now drive me away<br>…”</p>
+    </div>
+
+    <!-- Link to scroll back up to the card section -->
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+    <a href="thegirls.html" class="backTM-btn">Back to Tres Marias</a>
+
+  <!-- Second song info section -->
+  <section id="song2" class="song-info">
+    <h2>Crying Lightning – Arctic Monkeys</h2>
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>he is singing about a very bad girl that plays with the boys just how she pleases and he is totally under her control.</p>
+
+      <h3>About the Artist</h3>
+      <p>Arctic Monkeys are an English rock band formed in Sheffield in 2002.</p>
+
+      <h3>Why I Like It</h3>
+      <ul>
+        <li>Love at first Listen</li>
+        <li>The instrumentals is what got me into the band</li>
+        <li>Its from my favorite Album</li>
+      </ul>
+
+      <h3>My Favorite Lines</h3>
+      <p class="lyrics">“<br>Uninviting<br>But not half as impossible as everyone assumes you are
+Crying lightning<br>…”</p>
+    </div>
+
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+  <!-- Third song info section -->
+  <section id="song3" class="song-info">
+    <h2>Cinnamon Girl – Lana Del Rey</h2>
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>In “Cinnamon Girl,” Lana Del Rey expresses conflicted feelings about an intense and possibly unhealthy relationship, while begging her love interest to nurture her instead of hurting her.</p>
+
+      <h3>About the Artist</h3>
+      <p>Lana Del Rey is an American singer-songwriter. Her music is noted for its melancholic exploration of glamor and romance.</p>
+
+      <h3>Why I Like It</h3>
+      <ul>
+        <li>Very emotional</li>
+        <li>Relatable lyrics</li>
+        <li>One of my favorites from the NFR album</li>
+      </ul>
+
+      <h3>My Favorite Lines</h3>
+      <p class="lyrics">“<br>There's things I wanna say to you<br>But I'll just let you live<br>…” </p>
+    </div>
+
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+<script>
+  /* This script plays a short audio preview when a card is hovered and stops the sound when the mouse leaves. */
+  document.querySelectorAll(".card").forEach(card => {
+    const audio = card.querySelector("audio.song");
+
+    card.addEventListener("mouseenter", () => {
+      audio.currentTime = 0;
+      audio.play();
+    });
+
+    card.addEventListener("mouseleave", () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  });
+</script>
+
+</body>
+</html>

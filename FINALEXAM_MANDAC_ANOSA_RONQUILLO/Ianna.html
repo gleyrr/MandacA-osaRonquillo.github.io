@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ianna — Top Songs</title>
+ 
+  <link rel="stylesheet" href="ianna.css" />
+</head>
+<body>
+<!-- Navbar -->
+ <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+  <li><a href="intropage.html" class="active">Home</a></li>
+  <li><a href="thegirls.html">Tres Marias</a></li>
+  <li><a href="ness.html" >About-Ness</a></li>
+  <li><a href="glaire.html">About-Glaire</a></li>
+  <li><a href="ianna.html" style="color: #f3c992;">About-Ianna</a></li>
+</ul>
+
+    </div>
+  </nav>
+
+  <header class="title-block">
+    <h1>This is Ianna</h1>
+    <p>My Spotify Top 3.</p>
+  </header>
+
+  
+  <a id="top"></a>
+
+  <main class="container">
+   
+    <section class="grid" aria-label="Top songs">
+
+      <!-- First song card. Clicking this jumps to the song1 section -->
+      <a href="#song1" class="card" data-song="1" aria-label="Top Song 1">
+        
+        <!-- Front side of the card with vinyl image -->
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+
+        
+        <div class="face face2" style="background-image: url('theweeknd.png');">
+          
+          <audio class="song" src="The Weeknd - Scared To Live (Audio).mp3" preload="auto"></audio>
+        
+         
+          <div class="content">
+            <h3>The Weekend</h3>
+            <p>“Scared to Live”</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Second song card -->
+      <a href="#song2" class="card" data-song="2" aria-label="Top Song 2">
+        
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+
+        <div class="face face2" style="background-image: url('frank.png');">
+          <audio class="song" src="Forrest Gump.mp3" preload="auto"></audio>
+          
+          <div class="content">
+            <h3>Frank Ocean</h3>
+            <p>"Forrest Gump"</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Third song card -->
+      <a href="#song3" class="card" data-song="3" aria-label="Top Song 3">
+        
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+
+        <div class="face face2" style="background-image: url('sabrina\ \(1\).png');">
+          <audio class="song" src="Dont Smile.mp3" preload="auto"></audio>
+
+          <div class="content">
+            <h3>Sabrina Carpenter</h3>
+            <p>"Don't Smile"</p>
+          </div>
+        </div>
+      </a>
+
+    </section>
+  </main>
+ <a id="grid" href="thegirls.html" class="backTM-btn">Back to Tres Marias</a>
+  <!-- Song descriptions below.
+       These sections are hidden until a card link is clicked. -->
+  <section id="song1" class="song-info">
+    <h2>Scared to Live  – The Weeknd </h2>
+
+   
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>“Scared to Live” is a track from The Weeknd’s 2020 album After Hours. The song talks about letting someone go with grace, wishing them healing, and acknowledging past mistakes in a relationship.
+</p>
+
+      <h3>About the Artist</h3>
+      <p>The Weeknd (Abel Tesfaye) is a Canadian singer, songwriter, and producer known for his unique blend of R&B, pop, and alternative sounds. 
+</p>
+
+      <h3>Why I Like It</h3>
+      
+      <ul>
+        <li>It’s emotional and comforting</li>
+        <li>The melody is soft and nostalgic.</li>
+        <li>The lyrics feel sincere and mature.
+</li>
+      </ul>
+
+      <h3> My Favorite Lines</h3>
+      <p class="lyrics">“<br>I hope you know that I, I’ve been praying
+That you find yourself<br> I hope you know that you, you deserve to
+Be loved, even if it’s not by me.<br>…”</p>
+    </div>
+
+    <!-- Link to scroll back up to the card section -->
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+  <!-- Second song info section -->
+  <section id="song2" class="song-info">
+    <h2>“Forrest Gump” – Frank Ocean</h2>
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>“Forrest Gump” is a track from Frank Ocean’s critically acclaimed album Channel orange (2012). The song uses the metaphor of the movie Forrest gump specifically the idea of someone running ahead to express unspoken feelings</p>
+
+      <h3>About the Artist</h3>
+      <p>Frank Ocean is an American singer, songwriter, and producer known for his emotional storytelling, soulful voice, and artistic vulnerability.
+</p>
+
+      <h3>Why I Like It</h3>
+      <ul>
+        <li>The storytelling is simple but powerful.</li>
+        <li>The melody is soft and nostalgic.</li>
+        <li>It captures longing in a relatable way.</li>
+      </ul>
+
+      <h3>My Favorite Lines</h3>
+      <p class="lyrics">“<br>This is love,<br>maybe I’ve been foolish.<br>…”</p>
+    </div>
+
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+  <!-- Third song info section -->
+  <section id="song3" class="song-info">
+    <h2>Don’t Smile – Sabrina Carpenter</h2>
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>“Don’t Smile” is one of Sabrina Carpenter’s earlier songs that talks about resisting others’ expectations and keeping parts of yourself guarded.</p>
+
+      <h3>About the Artist</h3>
+      <p>Sabrina Carpenter is an American singer, songwriter, and actress known for her bright pop sound, sharp lyricism, and confident storytelling.</p>
+
+      <h3>Why I Like It</h3>
+      <ul>
+        <li>It feels real and vulnerable.</li>
+        <li>The message is empowering.</li>
+        <li>The tone is soft but honest.</li>
+      </ul>
+
+      <h3>My Favorite Lines</h3>
+      <p class="lyrics">“<br>Don’t smile,<br>it’s better this way.<br>…” </p>
+    </div>
+
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+<script>
+  /* This script plays a short audio preview when a card is hovered and stops the sound when the mouse leaves. */
+  document.querySelectorAll(".card").forEach(card => {
+    const audio = card.querySelector("audio.song");
+
+    card.addEventListener("mouseenter", () => {
+      audio.currentTime = 0;
+      audio.play();
+    });
+
+    card.addEventListener("mouseleave", () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  });
+</script>
+
+</body>
+</html>

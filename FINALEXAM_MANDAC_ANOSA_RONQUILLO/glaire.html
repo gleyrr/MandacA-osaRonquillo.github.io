@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Glaire — Top Songs</title>
+  <!-- This links your CSS file that controls the design -->
+  <link rel="stylesheet" href="glaire.css" />
+</head>
+<body>
+<!-- Navbar -->
+ <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="intropage.html" class="active">Home</a></li>
+        <li><a href="thegirls.html">Tres Marias</a></li>
+        <li><a href="ness.html">About-Ness</a></li>
+        <li><a href="glaire.html" style="color: #d48b8b;">About-Glaire</a></li>
+        <li><a href="Ianna.html">About-Ianna</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Website heading and short subtitle -->
+  <header class="title-block">
+    <h1>This is Glaire</h1>
+    <p>My Spotify Top 3.</p>
+  </header>
+
+  <!-- Bookmark used for scrolling back to the top -->
+  <a id="top"></a>
+
+  <main class="container">
+    <!-- Section that displays all the song cards in a grid -->
+    <section class="grid" aria-label="Top songs">
+
+      <!-- First song card -->
+      <a href="#song1" class="card" data-song="1" aria-label="Top Song 1">
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+        <div class="face face2" style="background-image: url('imgPLK.jpeg');">
+          <audio class="song" src="PLK.mp3" preload="auto"></audio>
+          <div class="content">
+            <h3>Parokya ni Edgar</h3>
+            <p>"Pangarap lang kita"</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Second song card -->
+      <a href="#song2" class="card" data-song="2" aria-label="Top Song 2">
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+        <div class="face face2" style="background-image: url('imgANM.jpg');">
+          <audio class="song" src="ANMM.mp3" preload="auto"></audio>
+          <div class="content">
+            <h3>Angela Ken</h3>
+            <p>"Ako naman muna"</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Third song card -->
+      <a href="#song3" class="card" data-song="3" aria-label="Top Song 3">
+        <div class="face face1" style="background-image: url('vinyl.jpg');" aria-hidden="true"></div>
+        <div class="face face2" style="background-image: url('imgKK.jpeg');">
+          <audio class="song" src="KKK.mp3" preload="auto"></audio>
+          <div class="content">
+            <h3>Donnalyn</h3>
+            <p>"Kakaibabe"</p>
+          </div>
+        </div>
+      </a>
+
+    </section>
+    <a id="grid" href="thegirls.html" class="backTM-btn">Back to Tres Marias</a>
+  </main>
+
+  <!-- Song descriptions -->
+  <section id="song1" class="song-info">
+    <h2>Pangarap Lang Kita – Parokya ni Edgar</h2>
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>“Pangarap Lang Kita” is a bittersweet love song about admiring someone from afar
+         — loving a person who feels impossible to reach while accepting the reality that
+          not all feelings are returned.</p>
+
+      <h3>About the Artist</h3>
+      <p>Parokya ni Edgar is a legendary Filipino band known for their versatility, humor, 
+        and heartfelt songs. Their music is nostalgic and recognizable across generations.</p>
+
+      <h3>Why I Like It</h3>
+      <ul>
+        <li>I used to relate to the song, but now it’s not just a “pangarap” — I’m living the reality 
+          with the man I once connected this song to.</li>
+        <li>It’s been my favorite song since childhood—it gives nostalgic and comforting vibes</li>
+        <li>The Binondo TikTok trend made me appreciate it even more.</li>
+      </ul>
+
+      <h3>My Favorite Lines</h3>
+      <p class="lyrics">“<br>Ang hirap maging babae, kung torpe yung lalaki<br>Kahit may gusto
+         ka hindi mo masabi<br>…”</p>
+    </div>
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+  <!-- Second song info section -->
+  <section id="song2" class="song-info">
+    <h2>Ako Naman Muna – Angela Ken</h2>
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>“Ako Naman Muna” is a self-love anthem about healing, choosing yourself, and
+         learning to rest after giving so much to others.</p>
+
+      <h3>About the Artist</h3>
+      <p>Angela Ken is a young Filipina singer-songwriter known for emotional, relatable
+         songs that often focus on growth, healing, and personal reflection.</p>
+
+      <h3>Why I Like It</h3>
+      <ul>
+        <li>Reminds me to prioritize self-care</li>
+        <li>Gives a feeling of comfort and emotional rest</li>
+        <li>Empowering message about choosing yourself</li>
+        <li>Soft vocals that are calming to listen to</li>
+      </ul>
+
+      <h3>My Favorite Lines</h3>
+      <p class="lyrics">“<br>Huwag papalamon sa lungkot<br>Huwag hahayaang malugmok ang 
+        puso mo<br>Sa ibabato sa 'yo ng iba,<br>Tandaan mong sapat ka<br>…”</p>
+    </div>
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+  <!-- Third song info section -->
+  <section id="song3" class="song-info">
+    <h2>Kakaibabe – Donnalyn</h2>
+    <div class="info-box">
+      <h3>About the Song</h3>
+      <p>“Kakaibabe” is a fun, high-energy song that celebrates confidence, uniqueness, 
+        and embracing your own style.</p>
+
+      <h3>About the Artist</h3>
+      <p>Donnalyn Bartolome is a Filipina singer, rapper, and content creator known for her
+         upbeat music and empowering messages for young women.</p>
+
+      <h3>Why I Like It</h3>
+      <ul>
+        <li>Boosts my mood instantly</li>
+        <li>Catchy beat that’s fun to dance to</li>
+        <li>Encourages self-expression and being unapologetically yourself</li>
+      </ul>
+
+      <h3>My Favorite Lines</h3>
+      <p class="lyrics">“<br>Hindi mo siya maririnig humingi ng tawad<br>Mararamdaman mo 
+        na lang at magugulat<br>Gagaan ang loob kaya siya ay walang katulad<br>…”</p>
+    </div>
+    <a href="#top" class="back-btn">⬆ Back to Top</a>
+  </section>
+
+<script>
+  document.querySelectorAll(".card").forEach(card => {
+    const audio = card.querySelector("audio.song");
+    card.addEventListener("mouseenter", () => {
+      audio.currentTime = 0;
+      audio.play();
+    });
+    card.addEventListener("mouseleave", () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  });
+</script>
+
+</body>
+</html>
